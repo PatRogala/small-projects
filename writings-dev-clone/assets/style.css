@@ -139,3 +139,23 @@ header nav a {
   display: flex;
   gap: 30px;
 }
+
+.pagination {
+  width: 480px;
+  margin: 0 auto;
+  color: #909090;
+  font-family: 'Recursive', sans-serif;
+  font-style: italic;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;;
+}
+
+.pagination span {
+  color: #FF7575;
+}
+
+.pagination p:nth-child(2) {
+  letter-spacing: 10px;
+}
