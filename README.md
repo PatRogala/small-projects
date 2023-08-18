@@ -7,3 +7,7 @@
 ## cs.fyi clone
 [Check code](/cs-fyi-clone/)
 ![Writings dev clone](/previews/cs-fyi-clone.png)
+
+## github profile checker
+[Check code](/github-profile-checker/)
+![Github Search](/previews/github-search.png)
