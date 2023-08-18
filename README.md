@@ -6,3 +6,4 @@
 
 ## cs.fyi clone
 [Check code](/cs-fyi-clone/)
+![Writings dev clone](/previews/cs-fyi-clone.png)

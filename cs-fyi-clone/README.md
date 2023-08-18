@@ -1,4 +1,4 @@
-# writings.dev clone
+# cs.fyi clone
 
 Background color: rgb(23, 23, 23)
 Font color: #FFFFFF
