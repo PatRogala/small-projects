@@ -9,5 +9,3 @@ Body font: Poppins
 Headers font: Recursive
 
 Pixel perfect version, not responsive!
-
-![Writings dev clone](/previews/writings-dev-clone.png)
