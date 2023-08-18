@@ -89,7 +89,7 @@ header nav a {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 20px;
+  gap: 50px;
 }
 
 .category-listing a {
@@ -103,4 +103,39 @@ header nav a {
 
 .category-listing a:hover {
   text-decoration: underline;
+}
+
+.articles-listing {
+  width: 1244px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.articles-listing .post {
+  width: 390px;
+  height: 439px;
+  box-sizing: border-box;
+  padding: 27px;
+  background: #fff;
+  border-radius: 22px;
+  color: #000;
+}
+
+.post .post-bg {
+  width: 337px;
+  height: 160px;
+  margin: 0 auto;
+  border-radius: 22px;
+}
+
+.post .post-header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+}
+
+.post .post-information {
+  display: flex;
+  gap: 30px;
 }
