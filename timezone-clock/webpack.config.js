@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'development',
-  entry: './index.js',
+  entry: '/assets/javascript/index.js',
   output: {
     filename: 'main.js',
     publicPath: 'dist'
