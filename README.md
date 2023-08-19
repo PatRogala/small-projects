@@ -18,3 +18,4 @@
 
 ## website page searcher
 [Check code](/website-page-searcher/)
+![Website page searcher](/previews/website-page-searcher.png)
