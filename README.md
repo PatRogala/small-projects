@@ -19,3 +19,7 @@
 ## website page searcher
 [Check code](/website-page-searcher/)
 ![Website page searcher](/previews/website-page-searcher.png)
+
+## simple crud todo app
+[Check code](/simple-crud-todo/)
+![Crud app](/previews/simple-crud-todo.png)
