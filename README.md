@@ -14,3 +14,4 @@
 
 ## timezone clock
 [Check code](/timezone-clock/)
+![Timezone clock](/previews/timezone-clock.png)
