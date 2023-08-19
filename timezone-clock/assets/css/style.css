@@ -33,10 +33,70 @@ p {
   font-style: italic;
 }
 
+.timezone img {
+  width: 1.5rem;
+  margin-left: 1rem;
+}
+
 .date {
   font-size: 2rem;
   margin: 0;
   font-family: monospace;
+}
+
+#modal-timezone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(23, 23, 23, 0.3);
+  display: none;
+}
+
+#modal-content {
+  background: white;
+  color: black;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  border: 5px solid rgb(23, 23, 23);
+}
+
+#modal-content h2 {
+  margin: 0;
+}
+
+#modal-content form {
+  display: flex;
+  align-items: center;
+}
+
+#modal-content select {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  width: 60%;
+  border: 2px solid rgb(23, 23, 23);
+  -webkit-appearance: none;
+  padding: 2px;
+}
+
+#modal-content button {
+  background: #fff;
+  color: #000;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+#modal-timezone.is-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 600px) {

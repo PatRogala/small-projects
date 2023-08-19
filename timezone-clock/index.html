@@ -9,9 +9,31 @@
 </head>
 <body>
   <div class="main">
-    <p class="timezone" id="timezone">Europe / London</p>
+    <p class="timezone"><span id="timezone">Europe / London</span><span id="timezone-button" data-micromodal-trigger="modal-timezone"><img src="assets/images/edit.svg" alt="edit timezone icon"></span></p>
     <h1 id="time">06:35:00</h1>
     <p class="date" id="date">Monday, 1 May, 2023</p>
+  </div>
+
+  <!-- Modal (timezone change) -->
+  <div id="modal-timezone" aria-hidden="true">
+    <div id="modal-content">
+      <div tabindex="-1" data-micromodal-close>
+        <div role="dialog" aria-modal="true" aria-labelledby="modal-timezone-title" >
+          <header>
+            <h2 id="modal-timezone-title">
+              Change timezone
+            </h2>
+          </header>
+          <div id="modal-timezone-content">
+            <form id="timezone-form">
+              <select name="timezone-input" id="timezone-input">
+              </select>
+              <button id="timezone-submit" aria-label="Close modal">Apply</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

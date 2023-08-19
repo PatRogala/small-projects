@@ -20,6 +20,8 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "dayjs": "^1.11.9"
+    "dayjs": "^1.11.9",
+    "micromodal": "^0.4.10",
+    "timezones-list": "^3.0.2"
   }
 }
