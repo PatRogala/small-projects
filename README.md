@@ -23,3 +23,7 @@
 ## simple crud todo app
 [Check code](/simple-crud-todo/)
 ![Crud app](/previews/simple-crud-todo.png)
+
+## qr code component
+[Check code](/qr-code-component/)
+![Crud app](/previews/qr-code-component.jpg)
