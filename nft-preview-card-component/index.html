@@ -2,32 +2,201 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    :root {
+      --soft-blue: hsl(215, 51%, 70%);
+      --cyan: hsl(178, 100%, 50%);
+      --very-dark-blue-main: hsl(217, 54%, 11%);
+      --very-dark-blue-card: hsl(216, 50%, 16%);
+      --very-dark-blue-line: hsl(215, 32%, 27%);
+      --white: hsl(0, 0%, 100%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--very-dark-blue-main);
+      color: var(--soft-blue);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--very-dark-blue-card);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      max-width: 21.875rem;
+      width: 100%;
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    }
+
+    .image-container {
+      position: relative;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+
+    .nft-image {
+      width: 100%;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--cyan);
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.3s;
+    }
+
+    .image-container:hover .overlay {
+      opacity: 0.5;
+    }
+
+    .view-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .image-container:hover .view-icon {
+      opacity: 1;
+    }
+
+    .title {
+      color: var(--white);
+      font-size: 1.375rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      transition: color 0.3s;
+    }
+
+    .title:hover {
+      color: var(--cyan);
+    }
+
+    .description {
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+
+    .price, .time {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .price {
+      color: var(--cyan);
+      font-weight: 600;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: var(--very-dark-blue-line);
+      margin-bottom: 1rem;
+    }
+
+    .creator {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .avatar {
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid var(--white);
+      border-radius: 50%;
+    }
+
+    .creator-name {
+      color: var(--white);
+      transition: color 0.3s;
+    }
+
+    .creator-name:hover {
+      color: var(--cyan);
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 2rem;
+      color: var(--white);
+    }
+
+    .attribution a {
+      color: var(--cyan);
+    }
   </style>
 </head>
 <body>
+  <main class="card">
+    <div class="image-container">
+      <img src="./images/image-equilibrium.jpg" alt="Equilibrium NFT" class="nft-image">
+      <div class="overlay"></div>
+      <img src="./images/icon-view.svg" alt="View icon" class="view-icon">
+    </div>
 
-  Equilibrium #3429
+    <h1 class="title">Equilibrium #3429</h1>
+    <p class="description">Our Equilibrium collection promotes balance and calm.</p>
 
-  Our Equilibrium collection promotes balance and calm.
+    <div class="details">
+      <div class="price">
+        <img src="./images/icon-ethereum.svg" alt="Ethereum icon">
+        <span>0.041 ETH</span>
+      </div>
+      <div class="time">
+        <img src="./images/icon-clock.svg" alt="Clock icon">
+        <span>3 days left</span>
+      </div>
+    </div>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+    <div class="divider"></div>
+
+    <div class="creator">
+      <img src="./images/image-avatar.png" alt="Jules Wyvern avatar" class="avatar">
+      <p>Creation of <span class="creator-name">Jules Wyvern</span></p>
+    </div>
+  </main>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/PatRogala">Patryk Rogala</a>.
   </div>
 </body>
 </html>
