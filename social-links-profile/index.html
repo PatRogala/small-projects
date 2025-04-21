@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social links profile</title>
+  <style>
+    :root {
+      --green: hsl(75, 94%, 57%);
+      --white: hsl(0, 0%, 100%);
+      --grey-700: hsl(0, 0%, 20%);
+      --grey-800: hsl(0, 0%, 12%);
+      --grey-900: hsl(0, 0%, 8%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--grey-900);
+      color: var(--white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .profile-card {
+      background-color: var(--grey-800);
+      padding: 2.5rem;
+      border-radius: 0.75rem;
+      text-align: center;
+      max-width: 24rem;
+      width: 100%;
+    }
+
+    .profile-image {
+      width: 5.5rem;
+      height: 5.5rem;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+    }
+
+    .profile-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-location {
+      color: var(--green);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .profile-bio {
+      font-size: 0.875rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .social-link {
+      background-color: var(--grey-700);
+      color: var(--white);
+      text-decoration: none;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .social-link:hover {
+      background-color: var(--green);
+      color: var(--grey-900);
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .attribution a {
+      color: var(--green);
+    }
+  </style>
+</head>
+<body>
+  <main class="profile-card">
+    <img src="./assets/images/avatar-jessica.jpeg" alt="Jessica Randall" class="profile-image">
+    <h1 class="profile-name">Jessica Randall</h1>
+    <p class="profile-location">London, United Kingdom</p>
+    <p class="profile-bio">"Front-end developer and avid reader."</p>
+
+    <nav class="social-links">
+      <a href="#" class="social-link">GitHub</a>
+      <a href="#" class="social-link">Frontend Mentor</a>
+      <a href="#" class="social-link">LinkedIn</a>
+      <a href="#" class="social-link">Twitter</a>
+      <a href="#" class="social-link">Instagram</a>
+    </nav>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/PatRogala">Patryk Rogala</a>.
+  </div>
+</body>
+</html>
